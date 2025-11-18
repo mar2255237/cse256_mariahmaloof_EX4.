@@ -52,4 +52,4 @@ while attempts > 0:
 
 # If attempts run out
 if attempts == 0:
-    print(f"Game Over! Better luck next time... The word was '{word}'.")
+    print(f"Game Over! Better luck next time... The word was '{word}'. Try again later.")
