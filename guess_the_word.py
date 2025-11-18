@@ -10,10 +10,13 @@ word = random.choice(word_list)
 guessed_letters = set()
 
 # Number of incorrect attempts allowed
-attempts = 6
+attempts = 10
 
 # Welcome message
 print("Welcome to the Word Guessing Game!")
+
+# Hint for the user
+print("Hint: The word is a type of fruit!")
 
 # Game loop
 while attempts > 0:
