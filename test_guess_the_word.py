@@ -33,3 +33,11 @@ def test_display_word_progress_all_guessed():
     guessed_letters = set(word)
     progress = display_word_progress(word, guessed_letters)
     assert progress == "c h e r r y"
+
+def test_display_word_progress_incorrect_guess():
+    """Ensure incorrect guesses do not reveal any letters."""
+    word = "apple"
+    guessed_letters = {"z"}  # incorrect guess
+    progress = display_word_progress(word, guessed_letters)
+    assert progress == "_ _ _ _ _"
+
