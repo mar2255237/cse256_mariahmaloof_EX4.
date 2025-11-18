@@ -55,6 +55,6 @@ def play_game():
             else:
                 print("Please enter 'y' for yes or 'n' for no.")
 
-# Only run the game if this file is executed directly
+# This block ensures the game logic stays separate from testing logic.
 if __name__ == "__main__":
     play_game()
