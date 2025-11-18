@@ -9,6 +9,7 @@ def display_word_progress(word, guessed_letters):
 
 # Test that selected word is from the word list
 def test_select_word():
+    """Ensure a randomly selected word is from the predefined word list."""
     word = random.choice(word_list)
     assert word in word_list
 
